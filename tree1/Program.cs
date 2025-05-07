@@ -28,15 +28,13 @@ class LOL
         {
             if (arr.Length == 0) return null;
             // arr = arr.Cast<int?>().ToArray();
-         
-              TreeNode node = new(
-                    arr[0],
-                    treeGenerator([.. arr.Skip(1)]),
-                    treeGenerator([.. arr.Skip(2)])
-                );
-                return node;
-            
-           
+
+            TreeNode node = new(
+                arr[0],
+                treeGenerator([.. arr.Skip(1)]),
+                treeGenerator([.. arr.Skip(2)])
+            );
+            return node;
         }
     }
 }
@@ -59,10 +57,8 @@ public class Solution
 
     public IList<int> PreorderTraversal(TreeNode root)
     {
-
         List<int> result = new List<int>();
         return result;
-
     }
 
 }
